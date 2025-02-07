@@ -40,8 +40,7 @@ describe("test들을 묶는 단위 ", () => {
   });
 });
 
-
-test("mock ImplementationOnce", () => {
+test.skip("mock ImplementationOnce", () => {
   jest
     .spyOn(obj, "minus")
     .mockImplementationOnce((a, b) => a + b)
@@ -65,3 +64,7 @@ test("mock ImplementationReturnValue", () => {
   expect(obj.minus).toHaveBeenCalledTimes(1);
   expect(result1).toBe(5);
 });
+
+test.todo("나중에 만들어야징");
+
+it("should do something", () => {});
